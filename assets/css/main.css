@@ -82,6 +82,12 @@ a,
     color: #ffec64;
 }
 
+.artist-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    font-weight: 400;
+}
+
 /* ------------------------- */
 /*  TYPOGRAPHY - FONT SIZE   */
 /* ------------------------- */
