@@ -124,22 +124,12 @@ p {
 /*         SECTIONS          */
 /* ------------------------- */
 
-
-#introduction {
-    background-image: url('../img/background/main-cover.jpg');
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#introduction,
-#introduction>.container {
-    height: 100vh;
+#discography {
+    margin-top: 3.5rem;
 }
 
 #discography {
-    padding: 5% 0 5% 0;
+    padding: 5% 0 0 0;
 }
 
 #latest-music {
@@ -148,10 +138,10 @@ p {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 80px 0 80px 0;
+    padding: 0;
 }
 
-#latest-music h2 {
+.orange-title {
     color: #f8e332;
     text-shadow: -4px 3px 0 black;
 }
