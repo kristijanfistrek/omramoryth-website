@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap');
+
+body,
+html {
+    background-color: #161614;
+    color: #f9fdff;
+}
+
+body,
+html,
+main {
+    height: 100%;
+}
+
+/* ------------------------- */
+/*          NAVBAR           */
+/* ------------------------- */
+
+.bg-dark {
+    background-color: black !important;
+}
+
+/* ------------------------- */
+/* TYPOGRAPHY - FONT FACE    */
+/* ------------------------- */
+
+@font-face {
+    font-family: 'DoomLeft';
+    src: url('../fonts/amazdoom/AmazDooMLeft.woff2') format('woff2'),
+        url('../fonts/AmazDooMLeft.woff') format('woff'),
+        url('../fonts/amazdoom/AmazDooMLeft.ttf') format('truetype');
+    font-weight: normal;
+    font-display: fallback;
+}
+
+/* ------------------------- */
+/* TYPOGRAPHY - FONT STYLE   */
+/* ------------------------- */
+
+a {
+    color: #ffe600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffe928;
+    font-weight: 900;
+}
+
+/* ------------------------- */
+/* TYPOGRAPHY - FONT FAMILY */
+/* ------------------------- */
+
+h1,
+h2,
+h3,
+.navbar-brand {
+    font-family: 'Bebas Neue', cursive;
+}
+
+h4,
+h5,
+h6,
+p,
+a,
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.doom-heading {
+    font-family: DoomLeft;
+    text-shadow: -5px 5px 0 black;
+    color: #f8e332;
+}
+
+.doom-subheading {
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: -5px 5px 0 black;
+    letter-spacing: 4px;
+    color: #ffec64;
+}
+
+/* ------------------------- */
+/*  TYPOGRAPHY - FONT SIZE   */
+/* ------------------------- */
+
+h1 {
+    font-size: 5em;
+    letter-spacing: 5px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+h5,
+h6 {
+    font-size: 1.5em;
+}
+
+a,
+p {
+    font-size: 18px;
+}
+
+/* ------------------------- */
+/*         SECTIONS          */
+/* ------------------------- */
+
+
+#introduction {
+    background-image: url('../img/background/main-cover.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#introduction,
+#introduction>.container {
+    height: 100vh;
+}
+
+#discography {
+    padding: 5% 0 5% 0;
+}
+
+#latest-music {
+    background-image: url('../img/background/main-cover.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0 80px 0;
+}
+
+#latest-music h2 {
+    color: #f8e332;
+    text-shadow: -4px 3px 0 black;
+}
+
+#social-media {
+    background-color: #000;
+    padding: 20px;
+}
+
+#social-media a {
+    margin: 5px;
+}
+
+/* ------------------------- */
+/*         HR Lines          */
+/* ------------------------- */
+
+hr[role="double-dotted"] {
+    border: 0px solid;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(172, 131, 83, 0.75), rgba(0, 0, 0, 0));
+    margin: 32px 0px;
+    display: block;
+}
+
+hr[role="double-dotted"]::before {
+    position: absolute;
+    background-color: #efefef;
+    border: 1px solid;
+    border-color: #AC8353;
+    border-left: 0px solid;
+    border-top: 0px solid;
+    padding: 10px;
+    transform: rotate(45deg);
+    left: 50%;
+    margin: -10px 0px 0px -22px;
+    content: "";
+}
+
+.orange-separator {
+    display: block;
+
+}
+
+/* ------------------------- */
+/*        CONTACT FORM       */
+/* ------------------------- */
+
+form {
+    width: 50%;
+}
+
+input,
+textarea,
+.submit-btn {
+    width: 100%;
+}
+
+input {
+    color: white;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white;
+    height: 50px;
+}
+
+textarea {
+    color: white;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white;
+    height: 150px;
+}
+
+.submit-btn {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+.contact-form label {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* ------------------------- */
+/*        FOOTER             */
+/* ------------------------- */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+}
+
+/* ------------------------- */
+/*        PRELOADER          */
+/* ------------------------- */
+
+/* ------------------------- */
+/*        RESPONSIVE         */
+/* ------------------------- */
+
+@media screen and (max-width: 786px) {
+
+    h1 {
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 1em;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
