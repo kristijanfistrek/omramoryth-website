@@ -174,7 +174,7 @@ hr[role="double-dotted"]::before {
     padding: 10px;
     transform: rotate(45deg);
     left: 50%;
-    margin: -10px 0px 0px -22px;
+    margin: -10px 0px 0px -10px;
     content: "";
 }
 
