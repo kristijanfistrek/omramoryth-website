@@ -24,15 +24,6 @@ main {
 /* TYPOGRAPHY - FONT FACE    */
 /* ------------------------- */
 
-@font-face {
-    font-family: 'DoomLeft';
-    src: url('../fonts/amazdoom/AmazDooMLeft.woff2') format('woff2'),
-        url('../fonts/AmazDooMLeft.woff') format('woff'),
-        url('../fonts/amazdoom/AmazDooMLeft.ttf') format('truetype');
-    font-weight: normal;
-    font-display: fallback;
-}
-
 /* ------------------------- */
 /* TYPOGRAPHY - FONT STYLE   */
 /* ------------------------- */
@@ -67,21 +58,6 @@ a,
     font-family: 'Montserrat', sans-serif;
 }
 
-.doom-heading {
-    font-family: DoomLeft;
-    text-shadow: -5px 5px 0 black;
-    color: #f8e332;
-}
-
-.doom-subheading {
-    font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
-    font-weight: 900;
-    text-shadow: -5px 5px 0 black;
-    letter-spacing: 4px;
-    color: #ffec64;
-}
-
 .artist-title {
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
@@ -107,7 +83,8 @@ h3 {
 }
 
 h4 {
-    font-size: 2em;
+    font-weight: 500;
+    font-size: 1.7em;
 }
 
 h5,
@@ -124,8 +101,28 @@ p {
 /*         SECTIONS          */
 /* ------------------------- */
 
+#introduction {
+    background-image: url('../img/background/introduction-background.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+#introduction, 
+#introduction .container {
+    height: 100vh;
+}
+
+#introduction .col h1, 
+#introduction .col h4 {
+    color: #efefef;
+    text-shadow: -2px 2px 0 black;
+}
+
 #discography {
-    margin-top: 3.5rem;
+    margin-top: 2rem;
 }
 
 #discography {
@@ -142,8 +139,8 @@ p {
 }
 
 .orange-title {
-    color: #f8e332;
-    text-shadow: -4px 3px 0 black;
+    color: #bb8c31;
+    text-shadow: -2px 2px 0 black;
 }
 
 #social-media {
